@@ -333,7 +333,7 @@ font-size: 22px;
         padding: 0%;
     }
     .container-fluid img{
-        width: 230px;
+        width: 200px;
     }
     .carousel-caption{
         position: absolute;
@@ -359,8 +359,13 @@ font-size: 22px;
     .contenedor-titulos h3{
         font-size: 16px;
     }
-    #servicio , .lema ,.historia{
+    #servicio {
         font-size: 16px;
+        margin: 0% 5%;
+    }
+    .lema ,.historia{ 
+        font-size: 16px;
+        margin: 0%;
     }
 .mapa iframe{
     width: 250px;
