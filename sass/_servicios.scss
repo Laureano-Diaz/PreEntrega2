@@ -1,0 +1,41 @@
+.nuestro h1{
+    font-weight: bold;
+    color: #56c579;
+    font-size: 50px;
+    padding-top: 3%;
+    text-align: center;
+}
+.nuestro h2{
+    font-weight: bold;
+    text-decoration: none;
+    color: #56c579;
+    font-size: 30px;
+    margin: 5% 35%;
+    padding:1% ;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 20px;
+    text-align: center;  
+}
+.nuestro h2 a{
+    text-decoration: none;
+    color: #56c579;
+}
+
+ 
+.productos1, .productos2, .servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+}
+.productos1 p, .productos2 p, .servicios p{
+    margin: 5%;
+}
+
+
+
+.fondo{
+    background-color: white;
+}
