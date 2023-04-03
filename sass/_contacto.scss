@@ -1,0 +1,49 @@
+
+.contact h1{
+    font-weight: bold;
+    color: #56c579;
+    font-size: 38px;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#whiteback{
+    background-color: white;   
+     padding-bottom: 5%;
+}
+.encontranos{
+    margin:0 15%;
+    line-height: 375%;   
+    font-size: 30px;
+    h3{
+        margin: 3%;
+        font-weight: bolder;
+    }
+    
+}
+
+
+form{
+    border-style: solid;
+    margin: 5% 20%;
+    padding: 7%;
+    border-radius: 20px;
+    .form-label{
+        color: black;
+        font-weight: bolder;
+        font-size: 26px;
+    }
+    .btn-primary{
+        background-color: #56c579;
+        border-color: #56c579;
+    }
+    .btn-primary:hover{
+        background-color: #56c579;
+        border-color: #56c579;
+    }
+}
+.mapa-contacto iframe{
+    width: 100%;
+    height: 300px;
+   
+} 

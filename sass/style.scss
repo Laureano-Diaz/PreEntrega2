@@ -1,0 +1,154 @@
+@import 'variables';
+@import 'index';
+@import 'nosotros';
+@import 'materiales';
+@import 'servicios';
+@import 'contacto';
+*{
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #c9e4d2;
+    margin: 0 0;
+    .container-fluid{
+        margin: 0 10%;
+        .navbar-collapse{
+            justify-content: flex-end;
+            .nav-link{
+                color: $textColor;
+                font-size: 1.75rem;
+                font-weight: bolder;
+                &:hover{
+                    color: $verdeFilipuzzi;
+                                }
+                    }
+                        }
+                    }
+    }
+/* Media Queries */
+@media only screen  and (max-width: 768px) {
+body .container-fluid .navbar-collapse .nav-link{
+    font-size: 24px;
+    padding: 2%;
+}
+.container-fluid img{
+    width: 300px;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+    left: 15%;
+    padding-top:5%;
+    padding-bottom: 5%;
+    color: $textBackground;
+    text-align: center;
+}
+.carousel-caption h1, .carousel-caption h2 {
+    font-size: 1.25rem;
+}
+.carousel-caption p {
+    font-size: 1rem;     
+    }
+.texto #servicio{
+    font-size: 20px;
+}
+footer .contenedor-titulos{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer .contenedor-titulos .ubi  .box-1{
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+footer .contenedor-titulos .ubi .box-3{
+    flex-direction: inherit;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+.historia, .lema{
+    font-size: 24px;
+}
+.contact h1{
+font-size: 28px;
+}
+.fondo .productos1, .fondo .productos2, .fondo .servicios {
+    grid-template-columns: repeat(1, 1fr);
+
+}
+.fondo .nuestro h1 {
+    font-size: 26px;
+}
+.fondo .nuestro h2{
+    font-size: 24px;
+    margin: 5% 20%;
+} 
+.contenedor-titulos h3{
+    font-size: 24px;
+}
+ul, tr td, .box-3 a {
+font-size: 22px;
+}
+ }
+
+@media only screen  and (max-width: 600px) {
+body .container-fluid .navbar-collapse .nav-link{
+    font-size: 20px;
+    padding: 0%;
+}
+.container-fluid img{
+    width: 200px;
+}
+.carousel-caption{
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+    left: 15%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    color: $textBackground;
+    text-align: center;
+}
+.carousel-caption h1, .carousel-caption h2 {
+    font-size: 1rem;
+}
+.carousel-caption p {
+    font-size: 0.5rem;     
+}
+.button input{
+    margin-bottom: 5%;
+    font-size: 0.5rem;
+    }    
+    
+footer .contenedor-titulos h3{
+    font-size: 16px;
+}
+.texto #servicio {
+    font-size: 16px;
+    margin: 0% 5%;
+}
+.lema ,.historia{ 
+    font-size: 16px;
+    margin: 0%;
+ }
+.mapa iframe{
+    width: 250px;
+    height: 250px;
+}
+ul, tr td, .box-3 a {
+    font-size: 14px;
+}
+.fondo .nuestro h1 {
+font-size: 24px;
+}
+.fondo .nuestro h2{
+    font-size: 20px;
+    margin: 5% 20%;
+}   
+}

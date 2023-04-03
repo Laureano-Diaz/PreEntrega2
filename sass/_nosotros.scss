@@ -1,0 +1,23 @@
+.bobinas{
+    background-image: url(../imagenes/bobinas-de-acero.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 16%;
+    height: 100%;
+    width: auto;
+    }
+.lema{
+    background-color: $textBackground;
+    padding: 3% 30%;
+    font-size: 36px;
+    text-align: center;
+    color: $verdeFilipuzzi;
+}
+.historia{
+    padding: 3% 20%;
+    font-size: 28px;
+    text-align: center;
+    color: $textColor;
+}
