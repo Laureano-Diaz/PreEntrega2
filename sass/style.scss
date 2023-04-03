@@ -4,6 +4,12 @@
 @import "servicios";
 @import "contacto";
 
+/* Variables */
+
+$verdeFilipuzzi:#56c579;
+$textColor: black;
+$textBackground: white;
+
 *{
     font-family: 'ABeeZee', sans-serif;
     text-decoration: none;
@@ -18,27 +24,26 @@ body{
         .navbar-collapse{
             justify-content: flex-end;
             .nav-link{
-                color: black;
+                color: $textColor;
                 font-size: 1.75rem;
                 font-weight: bolder;
                 &:hover{
-                    color: #56c579;
+                    color: $verdeFilipuzzi;
                                 }
                     }
                         }
                     }
     }
 /* Media Queries */
-
-/* TABLET */
+/* 1 */
 @media only screen  and (max-width: 768px) {
-     .nav-link{
-        font-size: 24px;
-        padding: 2%;
-    }
-    .container-fluid img{
-        width: 300px;
-    }
+.nav-link{
+    font-size: 24px;
+    padding: 2%;
+}
+.container-fluid img{
+    width: 300px;
+}
 .carousel-caption {
     position: absolute;
     right: 15%;
@@ -46,7 +51,7 @@ body{
     left: 15%;
     padding-top:5%;
     padding-bottom: 5%;
-    color: #fff;
+    color: $textBackground;
     text-align: center;
 }
 .carousel-caption h1 {
@@ -98,58 +103,58 @@ ul, tr td, .box-3 a {
 font-size: 22px;
 }
  }
-/* MOBILE */
+/* 2 */
 @media only screen  and (max-width: 600px) {
-    .nav-link{
-        font-size: 20px;
-        padding: 0%;
-    }
-    .container-fluid img{
-        width: 200px;
-    }
-    .carousel-caption{
-        position: absolute;
-        right: 15%;
-        bottom: 5%;
-        left: 15%;
-        padding-top:2%;
-        padding-bottom: 2%;
-        color: #fff;
-        text-align: center;
-    }
-    .carousel-caption h1 {
-        font-size: 1rem;
-    }
-    .carousel-caption p {
-        font-size: 0.5rem;     
-        }
-        .button input{
-            margin-bottom: 5%;
-            font-size: 0.5rem;
-        }
+.nav-link{
+    font-size: 20px;
+    padding: 0%;
+}
+.container-fluid img{
+    width: 200px;
+}
+.carousel-caption{
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+    left: 15%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    color: $textBackground;
+    text-align: center;
+}
+.carousel-caption h1 {
+    font-size: 1rem;
+}
+.carousel-caption p {
+    font-size: 0.5rem;     
+}
+.button input{
+    margin-bottom: 5%;
+    font-size: 0.5rem;
+    }    
     
-    .contenedor-titulos h3{
-        font-size: 16px;
-    }
-    #servicio {
-        font-size: 16px;
-        margin: 0% 5%;
-    }
-    .lema ,.historia{ 
-        font-size: 16px;
-        margin: 0%;
-    }
+.contenedor-titulos h3{
+    font-size: 16px;
+}
+#servicio {
+    font-size: 16px;
+    margin: 0% 5%;
+}
+.lema ,.historia{ 
+    font-size: 16px;
+    margin: 0%;
+ }
 .mapa iframe{
     width: 250px;
     height: 250px;
     
     
 }
- ul, tr td, .box-3 a {
+ul, tr td, .box-3 a {
     font-size: 14px;
- }
- .nuestro h1 {
-    font-size: 24px;
+}
+.nuestro h1 {
+font-size: 24px;
 }
 .nuestro h2{
     font-size: 20px;
