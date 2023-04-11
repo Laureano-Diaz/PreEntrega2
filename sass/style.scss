@@ -98,7 +98,51 @@ footer{
             padding: 10px 0;
             color: #2A2A2A;
                         }}
-
+/* Pophover manual */
+.ventana{
+    display: flex;
+}
+.ubicacion{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(..//img/map-pin.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.mapa{
+    position: absolute;
+    bottom: 75px;
+    padding: 20px;
+    min-width: 600px;
+    background-color: #c9e4d2;
+    border: 1px solid $textColor;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.mapa .encontranos{
+    display: flex;
+    align-items: center;   
+}
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #2A2A2A;
+}
+.encontranos h3{
+    font-weight: bold;
+}
+.ubicacion:hover .mapa{
+    visibility: visible;
+    opacity: 1;
+    transform:translateX(-15%) translateY(0px);
+}
 /* Media Queries */
 @media only screen  and (max-width: 800px) {
 
@@ -195,6 +239,9 @@ footer .footer-menu .footer-content-contenedor:nth-of-type(2){
 ul, tr td, .box-3 a {
 font-size: 22px;
 }
+.ubicacion:hover .mapa{
+    transform: none;
+}
 }
 @media only screen  and (max-width: 600px) {
 body .container-fluid .navbar-collapse .nav-link{
@@ -223,10 +270,16 @@ body .container-fluid .navbar-collapse .nav-link{
 .button input{
     margin-bottom:10%;
     font-size: 0.5rem;
+    margin-top: 0;
     }    
     
 footer .contenedor-titulos h3{
     font-size: 16px;
+}
+footer .footer-contenedor .footer-content-contenedor .titulo-logo {
+    font-size: 1.75rem;}
+.mapa{
+    min-width: 270px;
 }
 .texto #servicio {
     font-size: 16px;
@@ -236,10 +289,6 @@ footer .contenedor-titulos h3{
     font-size: 16px;
     margin: 0%;
  }
-.mapa iframe{
-    width: 250px;
-    height: 250px;
-}
 .fondo .nuestro h1 {
 font-size: 24px;
 }
